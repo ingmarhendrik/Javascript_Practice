@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pood</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Pood</h1>
+        <div class="form-group">
+            <label for="searchProduct">Otsi toodet:</label>
+            <input type="text" class="form-control" id="searchProduct" placeholder="Otsi toote nime järgi">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Toote nimi</th>
+                    <th>Hind</th>
+                    <th>Kogus</th>
+                    <th>Hind</th>
+                    <th>Muuda</th>
+                    <th>Kustuta</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+            </tbody>
+        </table>
+        <div class="mt-3">
+            <h4>Kokku: <span id="totalAmount">0.00€</span></h4>
+        </div>
+        <div class="mt-3">
+            <h3>Lisa uus toode</h3>
+            <div class="form-group">
+                <label for="productName">Nimi:</label>
+                <input type="text" class="form-control" id="productName" placeholder="Toote nimi">
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Hind:</label>
+                <input type="number" class="form-control" id="productPrice" placeholder="Toote hind">
+            </div>
+            <div class="form-group">
+                <label for="productQuantity">Kogus:</label>
+                <input type="number" class="form-control" id="productQuantity" placeholder="Toote kogus">
+            </div>
+            <button class="btn btn-primary" id="addProduct">Lisa toode</button>
+        </div>
+        <div class="mt-3">
+            <h3>Kustuta toode</h3>
+            <button class="btn btn-danger" id="deleteProducts">Kustuta toode</button>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>

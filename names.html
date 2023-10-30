@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimed</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Nimed</h1>
+        <div class="form-group">
+            <label for="searchProduct">Otsi nime:</label>
+            <input type="text" class="form-control" id="searchName" placeholder="Otsi nime järgi">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Email</th>
+                    <th>Muuda</th>
+                </tr>
+            </thead>
+            <tbody id="nameList">
+            </tbody>
+        </table>
+        <div class="mt-3">
+            <h3>Lisa uus nimi
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" class="form-control" id="name" placeholder="Nimi">
+            </div>
+            <button class="btn btn-primary" id="addName">Lisa nimi</button>
+        </div>
+        <div class="mt-3">
+            <h3>Kustuta nimed</h3>
+            <button class="btn btn-danger" id="deleteNames">Kustuta valitud nimed</button>
+        </div>
+    </div>
+
+    <script src="names.js"></script>
+</body>
+</html>
